@@ -11,13 +11,55 @@ const projects = [
   {
     title: "IYTE Kariyer",
     description: "Career platform connecting IYTE students with job opportunities, internships, and industry events.",
-    tags: ["Platform", "Next.js", "Career"],
+    tags: ["Platform", "Jobs", "Career"],
     href: "https://iytekariyer.com",
   },
 ]
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ege Ünlü",
+  jobTitle: "Frontend Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "FuEnergy"
+  },
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "İzmir Institute of Technology",
+    alternateName: "IYTE"
+  },
+  url: "https://egeunlu.dev", // Update with your actual domain
+  sameAs: [
+    "https://github.com/EgeUnlu35",
+    "https://www.linkedin.com/in/ege-ünlü-255894263/",
+    "https://x.com/egeunluu"
+  ],
+  image: "https://avatars.githubusercontent.com/u/123566485?v=4",
+  description: "Senior Computer Engineering student at İzmir Institute of Technology. I specialize in UI/UX Design and build scalable websites, dashboards, and mobile apps.",
+  knowsAbout: [
+    "React",
+    "Next.js", 
+    "TypeScript",
+    "JavaScript",
+    "React Native",
+    "Tailwind CSS",
+    "UI/UX Design",
+    "Frontend Development",
+    "Web Development"
+  ],
+  email: "ege.ezgi.unlular@gmail.com"
+}
+
 export default function Home() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
     <main className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-12 lg:gap-16">
         <aside className="flex justify-center lg:justify-start">
@@ -37,21 +79,31 @@ export default function Home() {
           </div>
 
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3">
-              Contact
+            <h2 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4">
+              Tech Stack
             </h2>
-            <p className="text-sm text-secondary-foreground leading-relaxed">
-              {"Interested in working together or just want to say hi? Reach out at "}
-              <a
-                href="mailto:hello@egeunlu.com"
-                className="text-primary hover:underline"
-              >
-                hello@egeunlu.com
-              </a>
-            </p>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { name: "React", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
+                { name: "Next.js", color: "bg-gray-500/10 text-gray-500 border-gray-500/20" },
+                { name: "React Native", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
+                { name: "TypeScript", color: "bg-blue-600/10 text-blue-600 border-blue-600/20" },
+                { name: "JavaScript", color: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20" },
+                { name: "Tailwind CSS", color: "bg-cyan-500/10 text-cyan-500 border-cyan-500/20" },
+              ].map((tech) => (
+                <span
+                  key={tech.name}
+                  className={`px-3 py-1 rounded-full text-sm font-medium border ${tech.color}`}
+                >
+                  {tech.name}
+                </span>
+              ))}
+            </div>
           </div>
+
         </section>
       </div>
     </main>
+    </>
   )
 }

@@ -9,6 +9,18 @@ const nextConfig = {
         protocol: "https",
         hostname: "api.microlink.io",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "github-readme-streak-stats.herokuapp.com",
+      },
+      {
+        protocol: "https",
+        hostname: "github-readme-activity-graph.vercel.app",
+      },
     ],
   },
 }
