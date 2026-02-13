@@ -7,7 +7,7 @@ const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-jetbrains-mono' })
 
 export const metadata: Metadata = {
-  title: 'Ege Unlu - Frontend Developer at FuEnergy',
+  title: 'Ege Ünlü - Frontend Developer at FuEnergy',
   description: 'Senior Computer Engineering student at İzmir Institute of Technology. I specialize in UI/UX Design and build scalable websites, dashboards, and mobile apps using React, Next.js, and TypeScript.',
   keywords: [
     'Ege Ünlü',
