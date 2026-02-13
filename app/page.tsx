@@ -84,29 +84,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
-            <h2 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4">
-              Tech Stack
-            </h2>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { name: "React", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
-                { name: "Next.js", color: "bg-gray-500/10 text-gray-500 border-gray-500/20" },
-                { name: "React Native", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
-                { name: "TypeScript", color: "bg-blue-600/10 text-blue-600 border-blue-600/20" },
-                { name: "JavaScript", color: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20" },
-                { name: "Tailwind CSS", color: "bg-cyan-500/10 text-cyan-500 border-cyan-500/20" },
-              ].map((tech) => (
-                <span
-                  key={tech.name}
-                  className={`px-3 py-1 rounded-full text-sm font-medium border ${tech.color}`}
-                >
-                  {tech.name}
-                </span>
-              ))}
-            </div>
-          </div>
-
         </section>
       </div>
     </main>
