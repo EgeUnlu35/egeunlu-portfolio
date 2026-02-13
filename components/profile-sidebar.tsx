@@ -16,9 +16,9 @@ export function ProfileSidebar() {
 
       <div className="text-center lg:text-left">
         <h1 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight text-balance">{"Ege Ünlü"}</h1>
-        <p className="text-base text-muted-foreground mt-2">Frontend Developer at FuEnergy</p>
+        <p className="text-base text-muted-foreground mt-2">Senior CENG Student at IZTECH</p>
         <p className="text-base text-muted-foreground">
-          CS Senior @ IYTE
+          Frontend Dev @FuEnergy
         </p>
       </div>
 
