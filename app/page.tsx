@@ -29,7 +29,7 @@ export default function Home() {
             <h2 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4">
               Projects
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
