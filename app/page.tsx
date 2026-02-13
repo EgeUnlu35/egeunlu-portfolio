@@ -14,6 +14,12 @@ const projects = [
     tags: ["Platform", "Jobs", "Career"],
     href: "https://iytekariyer.com",
   },
+  {
+    title: "GitArena",
+    description: "Fight with commits. Compare GitHub stats. Climb the leaderboard.",
+    tags: ["GitHub", "Gamification", "Leaderboard"],
+    href: "https://gitarena.vercel.app",
+  },
 ]
 
 const jsonLd = {
