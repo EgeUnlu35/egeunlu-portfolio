@@ -75,6 +75,7 @@ export function ProfileSidebar() {
             { name: "TypeScript", color: "bg-blue-600/10 text-blue-600 border-blue-600/20" },
             { name: "JavaScript", color: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20" },
             { name: "Tailwind CSS", color: "bg-cyan-500/10 text-cyan-500 border-cyan-500/20" },
+            { name: "Figma", color: "bg-purple-500/10 text-purple-500 border-purple-500/20" },
           ].map((tech) => (
             <span
               key={tech.name}
