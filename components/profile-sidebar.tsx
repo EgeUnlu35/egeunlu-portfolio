@@ -23,7 +23,7 @@ export function ProfileSidebar() {
       </div>
 
       <p className="text-base text-secondary-foreground leading-relaxed text-center lg:text-left">
-        Senior Computer Engineering student at İzmir Institute of Technology. I specialize in UI/UX Design and build scalable websites, dashboards, and mobile apps.
+        I'm building products on the web
       </p>
 
       <div className="flex gap-3">
