@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { ViewCounter } from "@/components/view-counter"
 
 export function ProfileSidebar() {
   return (
@@ -86,6 +87,8 @@ export function ProfileSidebar() {
           ))}
         </div>
       </div>
+
+      <ViewCounter />
     </div>
   )
 }
