@@ -26,16 +26,7 @@ export function ProfileSidebar() {
   return (
     <div className="flex flex-col items-center lg:items-start gap-6">
       <div className="group relative w-52 h-52 lg:w-60 lg:h-60 animate-fade-up">
-        {/* Rotating gradient glow behind the avatar */}
-        <div
-          aria-hidden="true"
-          className="absolute -inset-1.5 rounded-full opacity-60 blur-md animate-spin-slow group-hover:opacity-90 transition-opacity duration-500"
-          style={{
-            background:
-              "conic-gradient(from 0deg, hsl(var(--primary)), #22d3ee, #a855f7, hsl(var(--primary)))",
-          }}
-        />
-        <div className="relative w-full h-full rounded-full overflow-hidden ring-4 ring-background">
+        <div className="relative w-full h-full rounded-full overflow-hidden ring-1 ring-border ring-offset-4 ring-offset-background shadow-sm transition-all duration-500 group-hover:ring-primary/40 group-hover:shadow-lg group-hover:shadow-primary/10">
           <Image
             src="https://avatars.githubusercontent.com/u/123566485?v=4"
             alt="Ege Ünlü"

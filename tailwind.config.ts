@@ -102,7 +102,6 @@ const config: Config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         // "backwards" so hover transforms still work once the entrance finishes
         'fade-up': 'fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards',
-        'spin-slow': 'spin 8s linear infinite',
         'caret-blink': 'caret-blink 1s step-end infinite',
       },
     },
