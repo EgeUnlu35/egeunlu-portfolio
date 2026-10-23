@@ -74,12 +74,19 @@ export default function Home() {
 
         <section className="flex flex-col gap-8">
           <div>
-            <h2 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4">
+            <h2
+              className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 animate-fade-up"
+              style={{ animationDelay: "200ms" }}
+            >
               Projects
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {projects.map((project) => (
-                <ProjectCard key={project.title} {...project} />
+              {projects.map((project, i) => (
+                <ProjectCard
+                  key={project.title}
+                  {...project}
+                  style={{ animationDelay: `${300 + i * 120}ms` }}
+                />
               ))}
             </div>
           </div>

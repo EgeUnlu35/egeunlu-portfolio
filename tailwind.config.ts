@@ -88,10 +88,22 @@ const config: Config = {
             height: '0',
           },
         },
+        'fade-up': {
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'caret-blink': {
+          '0%, 50%': { opacity: '1' },
+          '50.01%, 100%': { opacity: '0' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        // "backwards" so hover transforms still work once the entrance finishes
+        'fade-up': 'fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) backwards',
+        'spin-slow': 'spin 8s linear infinite',
+        'caret-blink': 'caret-blink 1s step-end infinite',
       },
     },
   },
