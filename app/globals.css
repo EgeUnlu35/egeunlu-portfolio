@@ -30,6 +30,33 @@
     --input: 220 15% 88%;
     --ring: 220 70% 45%;
     --radius: 0.5rem;
+    color-scheme: light;
+  }
+
+  /* Follows the visitor's system/browser theme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 220 20% 7%;
+      --foreground: 220 15% 92%;
+      --card: 220 18% 10%;
+      --card-foreground: 220 15% 92%;
+      --popover: 220 18% 10%;
+      --popover-foreground: 220 15% 92%;
+      --primary: 220 80% 65%;
+      --primary-foreground: 220 20% 7%;
+      --secondary: 220 15% 13%;
+      --secondary-foreground: 220 12% 75%;
+      --muted: 220 15% 13%;
+      --muted-foreground: 220 10% 60%;
+      --accent: 220 80% 65%;
+      --accent-foreground: 220 20% 7%;
+      --destructive: 0 62% 50%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 220 15% 18%;
+      --input: 220 15% 18%;
+      --ring: 220 80% 65%;
+      color-scheme: dark;
+    }
   }
 }
 

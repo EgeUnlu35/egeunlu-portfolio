@@ -12,9 +12,9 @@ const socials = [
 
 const techStack = [
   { name: "React", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
-  { name: "Next.js", color: "bg-gray-500/10 text-gray-500 border-gray-500/20" },
+  { name: "Next.js", color: "bg-gray-500/10 text-gray-500 border-gray-500/20 dark:text-gray-400" },
   { name: "React Native", color: "bg-blue-500/10 text-blue-500 border-blue-500/20" },
-  { name: "TypeScript", color: "bg-blue-600/10 text-blue-600 border-blue-600/20" },
+  { name: "TypeScript", color: "bg-blue-600/10 text-blue-600 border-blue-600/20 dark:text-blue-400" },
   { name: "JavaScript", color: "bg-yellow-500/10 text-yellow-500 border-yellow-500/20" },
   { name: "Tailwind CSS", color: "bg-cyan-500/10 text-cyan-500 border-cyan-500/20" },
   { name: "Figma", color: "bg-purple-500/10 text-purple-500 border-purple-500/20" },
@@ -28,9 +28,10 @@ export function ProfileSidebar() {
       <div className="group relative w-52 h-52 lg:w-60 lg:h-60 animate-fade-up">
         <div className="relative w-full h-full rounded-full overflow-hidden ring-1 ring-border ring-offset-4 ring-offset-background shadow-sm transition-all duration-500 group-hover:ring-primary/40 group-hover:shadow-lg group-hover:shadow-primary/10">
           <Image
-            src="https://avatars.githubusercontent.com/u/123566485?v=4"
+            src="/images/profile.jpg"
             alt="Ege Ünlü"
             fill
+            sizes="(min-width: 1024px) 240px, 208px"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             priority
           />
