@@ -20,6 +20,12 @@ const projects = [
     tags: ["GitHub", "Gamification", "Leaderboard"],
     href: "https://gitarena.vercel.app",
   },
+  {
+    title: "PetekMind",
+    description: "Private AI that runs on your own computer and works from your phone and laptop. No cloud, no tracking.",
+    tags: ["AI", "Privacy", "Cross-platform"],
+    href: "https://petekmind.com",
+  },
 ]
 
 const jsonLd = {
